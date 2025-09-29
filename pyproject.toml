@@ -5,12 +5,11 @@ description = "Extended configuration using YAML files"
 readme = "README.md"
 authors = [{ name = "Marc Bertens-Nguyen", email = "m.bertens@pe2mbs.nl" }]
 maintainers = [{ name = "Marc Bertens-Nguyen", email = "m.bertens@pe2mbs.nl" }]
-license = { text = "GNU General Public License v2.0 only" }
+license = "	GPL-2.0-only"
 classifiers = [
     'Development Status :: 5 - Production/Stable',
     'Environment :: Web Environment',
     'Intended Audience :: Developers',
-    'License :: OSI Approved :: BSD License',
     'Operating System :: OS Independent',
     'Programming Language :: Python',
     "Framework :: Flask",
