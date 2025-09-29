@@ -1,0 +1,1 @@
+from flask_extended_config.config import Config

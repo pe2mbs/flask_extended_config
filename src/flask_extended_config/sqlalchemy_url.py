@@ -19,6 +19,7 @@ class SqlalchemyUrl( URL ):
             settings[ 'schema' ] = data[ 'SCHEMA' ]
 
         else:
+            settings[ 'database' ] = data['DATABASE' ]
             if 'HOST' not in data:
                 settings['host'] = 'localhost'
 
@@ -39,6 +40,6 @@ class SqlalchemyUrl( URL ):
             settings[ 'query' ] = data[ 'OPTIONS' ]
 
         if engine.startswith( 'postgresql' ) and 'SCHEMA' in data:
-            settings[ 'query' ][ 'options' ] = '-c%20search_path={SCHEMA}'.format( **data )
+            settings.setdefault( 'query', {} )[ 'options' ] = '-c search_path={SCHEMA}'.format( **data )
 
         return cls.create( **settings )

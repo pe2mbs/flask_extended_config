@@ -31,9 +31,9 @@ from flask import Config as BaseConfig
 from mako.template import Template
 from mako.exceptions import text_error_template
 import io
-from src.flask_extended_config.iterator import lookahead
-from src.flask_extended_config.sqlalchemy_url import SqlalchemyUrl
-from src.flask_extended_config.yaml_load import my_safe_load
+from flask_extended_config.iterator import lookahead
+from flask_extended_config.sqlalchemy_url import SqlalchemyUrl
+from flask_extended_config.yaml_load import my_safe_load
 
 
 __author__ = "Marc Bertens"
