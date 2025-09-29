@@ -1,6 +1,6 @@
 [project]
 name = "Flask-extended-config"
-version = "1.0.5"
+version = "1.0.6"
 description = "Extended configuration using YAML files"
 readme = "README.md"
 authors = [{ name = "Marc Bertens-Nguyen", email = "m.bertens@pe2mbs.nl" }]

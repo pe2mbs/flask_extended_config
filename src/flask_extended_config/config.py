@@ -181,9 +181,9 @@ class Config( BaseConfig ):
                                 else:
                                     result[ key ] = my_safe_load( stream )
 
-                hosts_folder = os.path.join( config_folder, 'hosts', platform.node() )
+                hosts_folder = os.path.join( config_folder, 'hosts', f'{ platform.node() }.conf' )
                 if os.path.exists( hosts_folder ):
-                    with open(configFile, 'r') as stream:
+                    with open(hosts_folder, 'r') as stream:
                         result = self._config_over_ride( result, my_safe_load(stream ) )
 
                 self._config_inject( result, os.path.join( config_folder, 'environ' ),
